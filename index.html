@@ -1,363 +1,346 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Md.Imam Hassan</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Md.Imam Hassan</title>
 
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Remix Icon -->
-<link
-  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
-  rel="stylesheet"
-/>
+    <!-- Remix Icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+  </head>
 
-</head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand">Imam</a>
 
-<body>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">ImamPortfolio</a>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navMenu"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
 
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="container">
-      <div class="row justify-content-between m-0">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="row justify-content-between m-0">
+          <div class="col-lg-6">
+            <h1 class="hero-title">
+              Creative <span>Frontend Developer</span> Building Modern Web
+              Experiences
+            </h1>
 
-        <div class="col-lg-6">
-          <h1 class="hero-title">
-            Creative <span>Frontend Developer</span> Building Modern Web Experiences
-          </h1>
+            <p class="hero-text">
+              I create high-quality responsive websites with clean code, smooth
+              animations, modern UI/UX, and professional performance that helps
+              businesses grow online.
+            </p>
 
-          <p class="hero-text">
-            I create high-quality responsive websites with clean code,
-            smooth animations, modern UI/UX, and professional performance
-            that helps businesses grow online.
+            <div class="hero-btns">
+              <a href="#contact" class="btn btn-main">Hire Me</a>
+              <a href="#projects" class="btn-outline-custom">View Projects</a>
+            </div>
+
+            <div class="social-icons mt-5">
+              <a href="https://github.com/imam-programmer"
+                ><i id="hru-icon" class="ri-github-line"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/md-imam-hassan-chowdhury-9230a4393/"
+                ><i id="hru-icon" class="ri-linkedin-line"></i
+              ></a>
+              <a href="#"><i id="hru-icon" class="ri-twitter-x-fill"></i></a>
+              <a
+                href="https://www.facebook.com/people/Md-Imam-Hasan-Chowdhury/100087378347616/"
+                ><i id="hru-icon" class="ri-facebook-fill"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-5">
+            <div class="hero-image">
+              <img src="./image/imam.jpeg" alt="" />
+
+              <div class="floating-card card-1">
+                <strong>6 months +</strong><br />
+                Frontend Experience
+              </div>
+
+              <div class="floating-card card-2">
+                <strong>40+ Projects</strong><br />
+                Completed Successfully
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="s-h2">My Expertise</h2>
+          <p id="s-P">
+            Specialized in building responsive, modern, animated and
+            conversion-focused websites using the latest frontend technologies.
+          </p>
+        </div>
+
+        <div class="row g-4 " id="con">
+          <div class="col-md-6 col-lg-3 one">
+            <div class="skill-card ">
+              <i class="ri-html5-fill"></i>
+              <h4>HTML5 & CSS3</h4>
+              <p>
+                Pixel-perfect layouts with modern CSS techniques and responsive
+                design.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 two">
+            <div class="skill-card">
+              <i class="ri-javascript-fill"></i>
+              <h4>JavaScript</h4>
+              <p>
+                Interactive UI, dynamic functionality and modern frontend logic.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 three">
+            <div class="skill-card ">
+              <i class="ri-bootstrap-fill"></i>
+              <h4>Bootstrap</h4>
+              <p>Fast, clean and scalable responsive website development.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 four">
+            <div class="skill-card ">
+              <i class="ri-magic-line"></i>
+              <h4>GSAP Animation</h4>
+              <p>
+                Smooth premium animations that improve engagement and user
+                experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-title">
+          <h2>Featured Projects</h2>
+          <p >
+            A selection of modern, high-performing and visually appealing
+            websites.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6 col-md-6 col-xl-4 box-one">
+            <div class="project-card">
+              <img src="./image/4th project.png" alt="" />
+              <div class="project-overlay">
+                <div>
+                  <h4>Real state landin page</h4>
+                  <p>Modern state landing page with animations.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-xl-4 box-two">
+            <div class="project-card">
+              <img src="./image/1st project.png" alt="" />
+              <div class="project-overlay">
+                <div>
+                  <h4>Ecommerce UI</h4>
+                  <p>Responsive online store interface design.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-xl-4 box-three">
+            <div class="project-card">
+              <img src="./image/5th project.png" alt="" />
+              <div class="project-overlay">
+                <div>
+                  <h4>Innovate Website</h4>
+                  <p>Premium Innovate Website.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xl-4 box-four">
+            <div class="project-card">
+              <img src="./image/6th project.png" alt="" />
+              <div class="project-overlay">
+                <div>
+                  <h4>Portfolio Website</h4>
+                  <p>Clean developer portfolio with premium interactions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-xl-4 box-five">
+            <div class="project-card">
+              <img src="./image/2nd project.png" alt="" />
+              <div class="project-overlay">
+                <div>
+                  <h4>Registration Form</h4>
+                  <p>Premium Interactive Registration form.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-xl-4 box-six">
+            <div class="project-card">
+              <img src="./image/game.png" alt="" />
+              <div class="project-overlay">
+                <div>
+                  <h4>Tic-Tac-Too</h4>
+                  <p>Fully create by JavaScript Logic</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>About Me</h2>
+        </div>
+
+        <div class="about-box">
+          <div class="row align-items-center">
+            <div class="col-lg-6 a-img" >
+              <img
+                style="width: 100%"
+                src="./image/imam2.jpeg"
+                class="img-fluid rounded-4"
+                alt=""
+              />
+            </div>
+
+            <div class="col-lg-6 mt-4 mt-lg-0 a-text">
+              <p>
+                I’m a passionate frontend developer focused on creating visually
+                appealing, user-friendly, and high-performance websites.
+              </p>
+
+              <p>
+                My goal is to help businesses and clients build a strong online
+                presence through modern responsive design and smooth user
+                experiences.
+              </p>
+
+              <p>
+                I specialize in HTML, CSS, JavaScript, Bootstrap, responsive
+                design, and GSAP animations to create professional websites that
+                stand out.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <h2>Let’s Work Together</h2>
+
+          <p >
+            Looking for a frontend developer who can create modern, responsive,
+            and visually impressive websites? Let’s discuss your project.
           </p>
 
-          <div class="hero-btns">
-            <a href="#contact" class="btn btn-main">Hire Me</a>
-            <a href="#projects" class="btn-outline-custom">View Projects</a>
-          </div>
-
-          <div class="social-icons mt-5">
-            <a href="https://github.com/imam-programmer"><i class="ri-github-line"></i></a>
-            <a href="https://www.linkedin.com/in/md-imam-hassan-chowdhury-9230a4393/"><i class="ri-linkedin-line"></i></a>
-            <a href="#"><i class="ri-twitter-x-fill"></i></a>
-            <a href="https://www.facebook.com/people/Md-Imam-Hasan-Chowdhury/100087378347616/"><i class="ri-facebook-fill"></i></a>
-          </div>
-        </div>
-<div class="col-lg-1"></div>
-        <div class="col-lg-5">
-          <div class="hero-image">
-            <img src="./image/imam.jpeg" alt="">
-
-            <div class="floating-card card-1">
-              <strong>1 Year</strong><br />
-              Frontend Experience
-            </div>
-
-            <div class="floating-card card-2">
-              <strong>40+ Projects</strong><br />
-              Completed Successfully
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>My Expertise</h2>
-        <p id="P">
-          Specialized in building responsive, modern, animated and
-          conversion-focused websites using the latest frontend technologies.
-        </p>
-      </div>
-
-      <div class="row g-4">
-
-        <div class="col-md-6 col-lg-3">
-          <div class="skill-card">
-            <i class="ri-html5-fill"></i>
-            <h4>HTML5 & CSS3</h4>
-            <p>
-              Pixel-perfect layouts with modern CSS techniques and responsive design.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="skill-card">
-            <i class="ri-javascript-fill"></i>
-            <h4>JavaScript</h4>
-            <p>
-              Interactive UI, dynamic functionality and modern frontend logic.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="skill-card">
-            <i class="ri-bootstrap-fill"></i>
-            <h4>Bootstrap</h4>
-            <p>
-              Fast, clean and scalable responsive website development.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="skill-card">
-            <i class="ri-magic-line"></i>
-            <h4>GSAP Animation</h4>
-            <p>
-              Smooth premium animations that improve engagement and user experience.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Featured Projects</h2>
-        <p>
-          A selection of modern, high-performing and visually appealing websites.
-        </p>
-      </div>
-
-      <div class="row g-4">
-
-        <div class="col-lg-6 col-md-6 col-xl-4">
-          <div class="project-card">
-            <img
-              src="./image/4th project.png"
-              alt=""
-            />
-            <div class="project-overlay">
-              <div>
-                <h4>Real state landin page</h4>
-                <p>Modern state landing page with animations.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-md-6 col-xl-4">
-          <div class="project-card">
-            <img
-              src="./image/1st project.png"
-              alt=""
-            />
-            <div class="project-overlay">
-              <div>
-                <h4>Ecommerce UI</h4>
-                <p>Responsive online store interface design.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-md-6 col-xl-4">
-          <div class="project-card">
-            <img
-              src="./image/5th project.png"
-              alt=""
-            />
-            <div class="project-overlay">
-              <div>
-                <h4>Innovate Website</h4>
-                <p>Premium Innovate Website.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-xl-4">
-          <div class="project-card">
-            <img
-              src="./image/6th project.png"
-              alt=""
-            />
-            <div class="project-overlay">
-              <div>
-                <h4>Portfolio Website</h4>
-                <p>Clean developer portfolio with premium interactions.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-md-6 col-xl-4">
-          <div class="project-card">
-            <img
-              src="./image/2nd project.png"
-              alt=""
-            />
-            <div class="project-overlay">
-              <div>
-                <h4>Registration Form</h4>
-                <p>Premium Interactive Registration form.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-md-6 col-xl-4">
-          <div class="project-card">
-            <img
-              src="./image/game.png"
-              alt=""
-            />
-            <div class="project-overlay">
-              <div>
-                <h4>Tic-Tac-Too</h4>
-                <p>Fully create by JavaScript Logic</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>About Me</h2>
-      </div>
-
-      <div class="about-box">
-        <div class="row align-items-center">
-
-          <div class="col-lg-6">
-            <img style="width: 100%;"
-              src="./image/imam2.jpeg"
-              class="img-fluid rounded-4"
-              alt=""
-            />
-          </div>
-
-          <div class="col-lg-6 mt-4 mt-lg-0">
-            <p>
-              I’m a passionate frontend developer focused on creating visually
-              appealing, user-friendly, and high-performance websites.
-            </p>
-
-            <p>
-              My goal is to help businesses and clients build a strong online
-              presence through modern responsive design and smooth user experiences.
-            </p>
-
-            <p>
-              I specialize in HTML, CSS, JavaScript, Bootstrap, responsive design,
-              and GSAP animations to create professional websites that stand out.
-            </p>
-
-          </div>
-
+          <a href="mailto:imamprogrammer09@gmail.com" class="btn btn-main">
+            Contact Me
+          </a>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="container">
-
-      <div class="contact-box">
-        <h2>Let’s Work Together</h2>
-
-        <p>
-          Looking for a frontend developer who can create modern, responsive,
-          and visually impressive websites? Let’s discuss your project.
-        </p>
-
-        <a href="mailto:imamprogrammer09@gmail.com" class="btn btn-main">
-          Contact Me
-        </a>
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <p>© 2026 Md.Imam Hassan Chowdhury — Frontend Developer</p>
       </div>
+    </footer>
 
-    </div>
-  </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <p>
-        © 2026 Md.Imam Hassan Chowdhury — Frontend Developer
-      </p>
-    </div>
-  </footer>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script> 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="./imam.js"></script>
- 
-
-</body>
+    <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
+    
+  
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+      <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./imam.js"></script>
+  </body>
 </html>
