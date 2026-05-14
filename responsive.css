@@ -1,43 +1,342 @@
-  @media (max-width: 991px) {
-      .hero {
-        text-align: center;
-        padding-top: 100px;
-      }
+@media (min-width: 300px) and (max-width: 575px) {
+  section{
+    padding-bottom:50px ;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .hero p {
+    font-size: 1rem;
+    text-align: center;
+  }
+.mt-5 {
+    margin-top: 1rem!important;
+    text-align: center;
+    margin-bottom:30px ;
+}
+.social-icons a {
+    width: 40px;
+    height: 40px;
+}
+  .hero-btns {
+    margin-top: 35px;
+    text-align: center;
+  }
 
-      .hero h1 {
-        font-size: 3rem;
-      }
+  .card-1,
+  .card-2 {
+    display: none;
+  }
+.hero-image img {
+    height: 100%;
+    width: 100%;
+}
 
-      .hero-image {
-        margin-top: 50px;
-      }
+/* =============expertise start============== */
+#skills{
+  padding: 50px 0;
+}
+  .section-title h2 {
+    font-size: 1.8rem;
+  }
+   .section-title p {
+    font-size: 1rem;
+  }
 
-      .card-1,
-      .card-2 {
-        display: none;
-      }
-    }
 
-    @media (max-width: 576px) {
-      .hero h1 {
-        font-size: 2.3rem;
-      }
+  .btn-outline-custom {
+    margin-left: 0;
+    margin-top: 15px;
+    display: inline-block;
+  }
+  #projects{
+    padding: 50px 0;
+    padding-top: 30px;
+  }
+  .section-title {
+    margin-bottom: 25px;
+}
+/* ===============about start=============== */
+#about{
+  padding: 30px 0;
+}
+.about-box {
+    padding: 10px;
+}
+.about-box p {
+    font-size: 1rem;
+    width: 100%;
+}
 
-      .section-title h2 {
-        font-size: 2rem;
-      }
+/* ================contact part start============= */
+#contact{
+  padding: 30px 0;
+}
+  .contact-box h2 {
+    font-size: 1.8rem;
+  }
+.contact-box p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+.contact-box .btn-main {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+}
+.contact-box {
+    padding: 40px 10px;
+}
+footer p{
+  font-size: 0.8rem;
+}
+footer {
+    padding: 10px 0;
+}
 
-      .contact-box {
-        padding: 40px 20px;
-      }
+/* ===========project part image setup=========== */
+.project-card {
+    height: 200px;
+    width: 100%;
+}
+.project-overlay {
+    padding: 15px;
+}
+}
 
-      .contact-box h2 {
-        font-size: 2rem;
-      }
+@media (min-width: 350px) and (max-width: 575px) {
+ .project-card {
+    height: 250px;
+    width: 100%;
+}
+}
+@media (min-width: 420px) and (max-width: 575px) {
+ .project-card {
+    height: 280px;
+    width: 100%;
+}
 
-      .btn-outline-custom {
-        margin-left: 0;
-        margin-top: 15px;
-        display: inline-block;
-      }
-    }
+}
+@media (min-width: 500px) and (max-width: 575px) {
+ .project-card {
+    height: 300px;
+    width: 100%;
+}
+
+}
+@media (min-width: 540px) and (max-width: 575px) {
+ .project-card {
+    height: 320px;
+    width: 100%;
+}
+}
+/* ===========extra small device responsive done============== */
+
+/* =======================small device responsive start ==============================*/
+@media (min-width: 576px) and (max-width: 767px) {
+  section{
+    padding-bottom:50px ;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .hero p {
+    font-size: 1rem;
+    text-align: center;
+  }
+.mt-5 {
+    margin-top: 1.5rem!important;
+    text-align: center;
+    margin-bottom:50px ;
+}
+.social-icons a {
+    width: 40px;
+    height: 40px;
+}
+  .hero-btns {
+    margin-top: 35px;
+    text-align: center;
+  }
+
+  .card-1{
+    left: -29px;
+  }
+  .card-2 {
+  right: -30px;
+  }
+.hero-image img {
+    height: 100%;
+    width: 100%;
+}
+
+/* =============expertise start============== */
+#skills{
+  padding: 50px 0;
+}
+  .section-title h2 {
+    font-size: 1.8rem;
+  }
+   .section-title p {
+    font-size: 1rem;
+  }
+
+
+  .btn-outline-custom {
+    margin-left: 0;
+    margin-top: 15px;
+    display: inline-block;
+  }
+  #projects{
+    padding: 50px 0;
+    padding-top: 30px;
+  }
+  .section-title {
+    margin-bottom: 25px;
+}
+/* ===============about start=============== */
+#about{
+  padding: 30px 0;
+}
+.about-box {
+    padding: 20px;
+}
+.about-box p {
+    font-size: 1rem;
+    width: 100%;
+}
+
+/* ================contact part start============= */
+#contact{
+  padding: 30px 0;
+}
+  .contact-box h2 {
+    font-size: 1.8rem;
+  }
+.contact-box p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+.contact-box .btn-main {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+}
+.contact-box {
+    padding: 40px 30px;
+}
+footer p{
+  font-size: 0.8rem;
+}
+footer {
+    padding: 10px 0;
+}
+
+/* ===========project part image setup=========== */
+.project-card {
+    height: 300px;
+    width: 100%;
+}
+
+}
+
+/* ==============small device responsive done================== */
+
+
+/*======================medium device responsive start================== */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .hero h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+.mt-5 {
+    /* margin-top: 2rem!important; */
+    text-align: center;
+    margin-bottom:50px ;
+}
+
+  .hero-btns {
+    margin-top: 35px;
+    text-align: center;
+  }
+
+  .card-1{
+    left: -19px;
+  }
+  .card-2 {
+  right: -30px;
+  }
+.hero-image img {
+    height: 100%;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* =============expertise start============== */
+
+  .section-title h2 {
+    font-size: 2.5rem;
+  }
+   .section-title p {
+    font-size: 1.2rem;
+  }
+  #projects{
+    padding: 50px 0;
+    padding-top: 30px;
+  }
+  .section-title {
+    margin-bottom: 25px;
+}
+/* ===============about start=============== */
+#about{
+  padding: 30px 0;
+}
+.about-box {
+    padding: 20px;
+}
+.about-box p {
+    font-size: 1rem;
+    width: 100%;
+}
+
+/* ================contact part start============= */
+#contact{
+  padding: 30px 0;
+}
+  .contact-box h2 {
+    font-size: 1.8rem;
+  }
+.contact-box p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+.contact-box .btn-main {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+}
+.contact-box {
+    padding: 40px 30px;
+}
+footer p{
+  font-size: 0.8rem;
+}
+footer {
+    padding: 10px 0;
+}
+
+/* ===========project part image setup=========== */
+.project-card {
+    height: 300px;
+    width: 100%;
+}
+
+}

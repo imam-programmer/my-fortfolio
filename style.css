@@ -12,7 +12,6 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      scroll-behavior: smooth;
     }
 
     body {
@@ -157,7 +156,7 @@
         transform: translateY(0px);
       }
     }
-
+/* =============skills start================ */
     /* SECTION */
     section {
       padding: 100px 0;
@@ -178,6 +177,7 @@
       max-width: 700px;
       margin: auto;
       margin-top: 15px;
+      font-size: 1.3rem;
     }
 
     /* SKILLS */
@@ -267,7 +267,9 @@
 
     .about-box p {
       color: var(--text);
-      line-height: 1.8;
+      line-height: 2;
+      font-size: 1.3rem;
+      width: 100%;
     }
 
     /* CONTACT */
@@ -292,8 +294,12 @@
       color: #d1d5db;
       margin-top: 20px;
       margin-bottom: 35px;
+      font-size: 1.3rem;
     }
-
+     .contact-box .btn-main{
+      font-size: 1.3rem;
+    }
+ 
     footer {
       border-top: 1px solid var(--border);
       padding: 30px 0;
