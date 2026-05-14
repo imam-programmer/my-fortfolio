@@ -287,55 +287,97 @@ footer {
   }
    .section-title p {
     font-size: 1.2rem;
+    margin-bottom: 30px;
   }
   #projects{
-    padding: 50px 0;
-    padding-top: 30px;
+    padding: 40px 0;
+
   }
   .section-title {
     margin-bottom: 25px;
 }
 /* ===============about start=============== */
-#about{
-  padding: 30px 0;
-}
-.about-box {
-    padding: 20px;
-}
 .about-box p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     width: 100%;
 }
 
 /* ================contact part start============= */
 #contact{
-  padding: 30px 0;
+  padding: 50px 0;
 }
   .contact-box h2 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
 .contact-box p {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 .contact-box .btn-main {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding: 10px 20px;
 }
 .contact-box {
     padding: 40px 30px;
 }
 footer p{
-  font-size: 0.8rem;
-}
-footer {
-    padding: 10px 0;
+  font-size: 1rem;
 }
 
 /* ===========project part image setup=========== */
 .project-card {
+    height: 210px;
+    width: 100%;
+}
+
+}
+
+
+
+/* =========large device responsive start==================== */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .card-1{
+    left: -59px;
+  }
+  .card-2 {
+  right: -40px;
+  }
+.hero-image img {
+    height: 100%;
+    width: 100%;
+}
+/* ===========project part image setup=========== */
+.project-card {
     height: 300px;
+    width: 100%;
+}
+.skill-card {
+   padding: 20px;
+
+}
+}
+
+
+/* ============extra large device responsive start=============== */
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .card-1{
+    left: -59px;
+  }
+  .card-2 {
+  right: -40px;
+  }
+.hero-image img {
+    height: 100%;
+    width: 100%;
+}
+/* ===========project part image setup=========== */
+.project-card {
+    height: 240px;
     width: 100%;
 }
 
