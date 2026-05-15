@@ -1,3 +1,37 @@
+let project1=document.querySelector(".box-one");
+let project2=document.querySelector(".box-two");
+let project3=document.querySelector(".box-three");
+let project4=document.querySelector(".box-four");
+let project5=document.querySelector(".box-five");
+let project6=document.querySelector(".box-six");
+
+
+project1.addEventListener('click',(e)=>{
+  window.location.href="https://imam-programmer.github.io/Real-state-landing-page/"
+})
+project2.addEventListener('click',(e)=>{
+  window.location.href="https://imam-programmer.github.io/dark-light-E-commerce/"
+})
+
+project3.addEventListener('click',(e)=>{
+  window.location.href="https://imam-programmer.github.io/Responsive-Innovate-Design/"
+})
+
+project4.addEventListener('click',(e)=>{
+  window.location.href="https://imam-programmer.github.io/Responsive-Portfolio-Website-design/"
+})
+
+project5.addEventListener('click',(e)=>{
+  window.location.href="https://imam-programmer.github.io/Beautiful-Registration-form/"
+})
+
+project6.addEventListener('click',(e)=>{
+  window.location.href="https://imam-programmer.github.io/beautiful-tic-tac-game/"
+})
+
+
+
+
 let h1text = document.querySelector(".hero-title").textContent;
 let h1 = document.querySelector(".hero-title");
 let splittext = h1text.split("");
@@ -28,9 +62,6 @@ if (window.innerWidth > 991){
     stagger: 0.5,
   });
 }
-
-
-
 
 
 navtime.from(
@@ -101,7 +132,7 @@ skillanimation.from("#skills #s-h2", {
   duration: 1,
 });
 let skill_p=document.querySelector("#skills .section-title p")
-console.log(skill_p)
+
 skillanimation.from(skill_p, {
   y: 100,
   opacity: 0,
