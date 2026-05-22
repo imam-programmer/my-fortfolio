@@ -19,6 +19,7 @@
       background: var(--dark);
       color: white;
       overflow-x: hidden;
+      overflow-y: hidden;
     }
 
     a {
@@ -49,6 +50,7 @@
 
     /* HERO */
     .hero {
+      overflow: hidden;
       min-height: 100vh;
       display: flex;
       align-items: center;
@@ -158,6 +160,9 @@
     }
 /* =============skills start================ */
     /* SECTION */
+    #skills{
+      overflow: hidden;
+    }
     section {
       padding: 100px 0;
     }
@@ -211,6 +216,9 @@
     }
 
     /* PROJECTS */
+      #projects{
+    overflow: hidden;
+  }
     .project-card {
       overflow: hidden;
       border-radius: 25px;
@@ -258,6 +266,9 @@
     }
 
     /* ABOUT */
+    #about{
+      overflow: hidden;
+    }
     .about-box {
       background: var(--card);
       border: 1px solid var(--border);
@@ -273,6 +284,9 @@
     }
 
     /* CONTACT */
+    #contact{
+      overflow: hidden;
+    }
     .contact-box {
       background: linear-gradient(
         135deg,
@@ -305,6 +319,7 @@
       padding: 30px 0;
       color: var(--text);
       text-align: center;
+      overflow: hidden;
     }
 
     .social-icons a {

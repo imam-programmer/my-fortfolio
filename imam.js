@@ -113,6 +113,7 @@ navtime.from(
   },
   "-=2",
 );
+
 // ==================herupart end==============================
 
 // =========expertize start====================
@@ -121,7 +122,6 @@ let skillanimation=gsap.timeline(
   scrollTrigger: {
     trigger: "#skills #s-h2",
     scroller: "body",
-    // markers: true,
     start:'top 30%'
   },
   }
@@ -174,13 +174,36 @@ skillbox.from(".four",{
 
 
 // =====================================project start================
-gsap.from("#projects h2",{
+if(window.innerWidth>991){
+
+  gsap.from("#projects h2",{
+    y:100,
+    opacity:0,
+    duration:1,
+    scrollTrigger:{
+      trigger:"#projects h2",
+      start:"top 60%"
+    }
+  })
+  gsap.from("#projects .section-title p",{
+    y:-100,
+    opacity:0,
+    duration:1,
+    scrollTrigger:{
+      trigger:"#projects h2",
+      start:"top 60%"
+    }
+  })
+}
+
+if(window.innerWidth<992){
+  gsap.from("#projects h2",{
   y:100,
   opacity:0,
   duration:1,
   scrollTrigger:{
     trigger:"#projects h2",
-    start:"top 60%"
+    start:"top 100%"
   }
 })
 gsap.from("#projects .section-title p",{
@@ -189,47 +212,91 @@ gsap.from("#projects .section-title p",{
   duration:1,
   scrollTrigger:{
     trigger:"#projects h2",
-    start:"top 60%"
+    start:"top 30%"
   }
 })
+}
 
-let projectbox=gsap.timeline({
-  scrollTrigger:{
-    trigger:"#projects",
-    scroller:"body",
-   start:"top 30%"
-  }
-})
-projectbox.from(".box-one",{
-  x:-200,
-  duration:0.8,
-  opacity:0
-},"f")
-projectbox.from(".box-two",{
-  y:200,
-  duration:0.8,
-  opacity:0
-},)
-projectbox.from(".box-three",{
-  x:200,
-  duration:0.8,
-  opacity:0
-},"f")
-projectbox.from(".box-four",{
-  x:-200,
-  duration:0.8,
-  opacity:0
-},"s")
-projectbox.from(".box-five",{
-  y:-200,
-  duration:0.8,
-  opacity:0
-},)
-projectbox.from(".box-six",{
-  x:200,
-  duration:0.8,
-  opacity:0
-},'s')
+if(window.innerWidth<992){
+
+  let projectbox=gsap.timeline({
+    scrollTrigger:{
+      trigger:"#projects",
+      scroller:"body",
+     start:"top 0%"
+    }
+  })
+  projectbox.from(".box-one",{
+    x:-200,
+    duration:0.8,
+    opacity:0
+  },"f")
+  projectbox.from(".box-two",{
+    y:200,
+    duration:0.8,
+    opacity:0
+  },)
+  projectbox.from(".box-three",{
+    x:200,
+    duration:0.8,
+    opacity:0
+  },"f")
+  projectbox.from(".box-four",{
+    x:-200,
+    duration:0.8,
+    opacity:0
+  },"s")
+  projectbox.from(".box-five",{
+    y:-200,
+    duration:0.8,
+    opacity:0
+  },)
+  projectbox.from(".box-six",{
+    x:200,
+    duration:0.8,
+    opacity:0
+  },'s')
+}
+if(window.innerWidth>992){
+
+  let projectbox=gsap.timeline({
+    scrollTrigger:{
+      trigger:"#projects",
+      scroller:"body",
+     start:"top 30%"
+    }
+  })
+  projectbox.from(".box-one",{
+    x:-200,
+    duration:0.8,
+    opacity:0
+  },"f")
+  projectbox.from(".box-two",{
+    y:200,
+    duration:0.8,
+    opacity:0
+  },)
+  projectbox.from(".box-three",{
+    x:200,
+    duration:0.8,
+    opacity:0
+  },"f")
+  projectbox.from(".box-four",{
+    x:-200,
+    duration:0.8,
+    opacity:0
+  },"s")
+  projectbox.from(".box-five",{
+    y:-200,
+    duration:0.8,
+    opacity:0
+  },)
+  projectbox.from(".box-six",{
+    x:200,
+    duration:0.8,
+    opacity:0
+  },'s')
+}
 
 
 // ============about start================
@@ -273,39 +340,35 @@ splic.forEach((elem, idx) => {
   }
   contacth2.innerHTML = emty;
 });
-
-let contacttime=gsap.timeline({
-  scrollTrigger:{
-    trigger:"#contact",
-    scroller:"body",
-    start:"top 60%"
-  }
-})
-contacttime.from("#contact .contact-box",{
-  y:100,
-  opacity:0,
-  duration:1
-})
-contacttime.from(".c", {
-  x:100,
-  stagger: 0.1,
-  opacity: 0,
-
-},"h");
-contacttime.from(".d", {
-  x:-100,
-  stagger: -0.1,
-  opacity: 0,
-},"h");
-
-contacttime.from("#contact .contact-box p",{
-  y:100,
-  opacity:0,
-  duration:1
-})
-
-
-
+  let contacttime=gsap.timeline({
+    scrollTrigger:{
+      trigger:"#contact",
+      scroller:"body",
+      start:"top 100%"
+    }
+  })
+  contacttime.from("#contact .contact-box",{
+    y:100,
+    opacity:0,
+    duration:1
+  })
+  contacttime.from(".c", {
+    x:100,
+    stagger: 0.1,
+    opacity: 0,
+  
+  },"h");
+  contacttime.from(".d", {
+    x:-100,
+    stagger: -0.1,
+    opacity: 0,
+  },"h");
+  
+  contacttime.from("#contact .contact-box p",{
+    y:100,
+    opacity:0,
+    duration:1
+  })
 
 if (window.innerWidth < 992) {
   let icon = gsap.timeline();
@@ -330,6 +393,7 @@ gsap.from(".b", {
   stagger: -0.1,
   opacity: 0,
 });
+
 
 // Initialize Lenis
 const lenis = new Lenis({
