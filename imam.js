@@ -1,36 +1,38 @@
-let project1=document.querySelector(".box-one");
-let project2=document.querySelector(".box-two");
-let project3=document.querySelector(".box-three");
-let project4=document.querySelector(".box-four");
-let project5=document.querySelector(".box-five");
-let project6=document.querySelector(".box-six");
+let project1 = document.querySelector(".box-one");
+let project2 = document.querySelector(".box-two");
+let project3 = document.querySelector(".box-three");
+let project4 = document.querySelector(".box-four");
+let project5 = document.querySelector(".box-five");
+let project6 = document.querySelector(".box-six");
 
+project1.addEventListener("click", (e) => {
+  window.location.href =
+    "https://imam-programmer.github.io/Real-state-landing-page/";
+});
+project2.addEventListener("click", (e) => {
+  window.location.href =
+    "https://imam-programmer.github.io/dark-light-E-commerce/";
+});
 
-project1.addEventListener('click',(e)=>{
-  window.location.href="https://imam-programmer.github.io/Real-state-landing-page/"
-})
-project2.addEventListener('click',(e)=>{
-  window.location.href="https://imam-programmer.github.io/dark-light-E-commerce/"
-})
+project3.addEventListener("click", (e) => {
+  window.location.href =
+    "https://imam-programmer.github.io/Responsive-Innovate-Design/";
+});
 
-project3.addEventListener('click',(e)=>{
-  window.location.href="https://imam-programmer.github.io/Responsive-Innovate-Design/"
-})
+project4.addEventListener("click", (e) => {
+  window.location.href =
+    "https://imam-programmer.github.io/Responsive-Portfolio-Website-design/";
+});
 
-project4.addEventListener('click',(e)=>{
-  window.location.href="https://imam-programmer.github.io/Responsive-Portfolio-Website-design/"
-})
+project5.addEventListener("click", (e) => {
+  window.location.href =
+    "https://imam-programmer.github.io/Beautiful-Registration-form/";
+});
 
-project5.addEventListener('click',(e)=>{
-  window.location.href="https://imam-programmer.github.io/Beautiful-Registration-form/"
-})
-
-project6.addEventListener('click',(e)=>{
-  window.location.href="https://imam-programmer.github.io/beautiful-tic-tac-game/"
-})
-
-
-
+project6.addEventListener("click", (e) => {
+  window.location.href =
+    "https://imam-programmer.github.io/beautiful-tic-tac-game/";
+});
 
 let h1text = document.querySelector(".hero-title").textContent;
 let h1 = document.querySelector(".hero-title");
@@ -62,7 +64,6 @@ if (window.innerWidth > 991){
     stagger: 0.5,
   });
 }
-
 
 navtime.from(
   ".hero-text",
@@ -140,164 +141,78 @@ skillanimation.from(skill_p, {
 });
 
 let skillbox=gsap.timeline(
- { 
+ {
   scrollTrigger:{
 trigger:"#con",
 scroller:"body",
-start:"top 50%",
-end:"top 10%",
-scrub:2
+start:"top 100%",
+end:"top 0",
+scrub:3
   }
 }
 );
 skillbox.from(".one",{
   x:-200,
-  duration:2,
+  duration:0.3,
   opacity:0
 },"i")
 skillbox.from(".two",{
   y:200,
-  duration:2,
+  duration:0.3,
   opacity:0
 })
 skillbox.from(".three",{
   y:200,
-  duration:2,
+  duration:0.3,
   opacity:0
 })
 skillbox.from(".four",{
   x:200,
-  duration:2,
+  duration:0.3,
   opacity:0
 },"i")
 
-
-
 // =====================================project start================
-if(window.innerWidth>991){
 
-  gsap.from("#projects h2",{
-    y:100,
-    opacity:0,
-    duration:1,
-    scrollTrigger:{
-      trigger:"#projects h2",
-      start:"top 60%"
-    }
-  })
-  gsap.from("#projects .section-title p",{
-    y:-100,
-    opacity:0,
-    duration:1,
-    scrollTrigger:{
-      trigger:"#projects h2",
-      start:"top 60%"
-    }
-  })
-}
-
-if(window.innerWidth<992){
-  gsap.from("#projects h2",{
-  y:100,
-  opacity:0,
-  duration:1,
+let projectbox=gsap.timeline({
   scrollTrigger:{
-    trigger:"#projects h2",
-    start:"top 100%"
+    trigger:"#projects",
+    scroller:"body",
+   start:"top 60%",
+   end:"top 10%",
+   scrub:1
   }
 })
-gsap.from("#projects .section-title p",{
-  y:-100,
-  opacity:0,
-  duration:1,
-  scrollTrigger:{
-    trigger:"#projects h2",
-    start:"top 30%"
-  }
-})
-}
-
-if(window.innerWidth<992){
-
-  let projectbox=gsap.timeline({
-    scrollTrigger:{
-      trigger:"#projects",
-      scroller:"body",
-     start:"top 0%"
-    }
-  })
-  projectbox.from(".box-one",{
-    x:-200,
-    duration:0.8,
-    opacity:0
-  },"f")
-  projectbox.from(".box-two",{
-    y:200,
-    duration:0.8,
-    opacity:0
-  },)
-  projectbox.from(".box-three",{
-    x:200,
-    duration:0.8,
-    opacity:0
-  },"f")
-  projectbox.from(".box-four",{
-    x:-200,
-    duration:0.8,
-    opacity:0
-  },"s")
-  projectbox.from(".box-five",{
-    y:-200,
-    duration:0.8,
-    opacity:0
-  },)
-  projectbox.from(".box-six",{
-    x:200,
-    duration:0.8,
-    opacity:0
-  },'s')
-}
-if(window.innerWidth>992){
-
-  let projectbox=gsap.timeline({
-    scrollTrigger:{
-      trigger:"#projects",
-      scroller:"body",
-     start:"top 30%"
-    }
-  })
-  projectbox.from(".box-one",{
-    x:-200,
-    duration:0.8,
-    opacity:0
-  },"f")
-  projectbox.from(".box-two",{
-    y:200,
-    duration:0.8,
-    opacity:0
-  },)
-  projectbox.from(".box-three",{
-    x:200,
-    duration:0.8,
-    opacity:0
-  },"f")
-  projectbox.from(".box-four",{
-    x:-200,
-    duration:0.8,
-    opacity:0
-  },"s")
-  projectbox.from(".box-five",{
-    y:-200,
-    duration:0.8,
-    opacity:0
-  },)
-  projectbox.from(".box-six",{
-    x:200,
-    duration:0.8,
-    opacity:0
-  },'s')
-}
-
+projectbox.from(".box-one",{
+  x:-200,
+  duration:0.8,
+  opacity:0
+},"f")
+projectbox.from(".box-two",{
+  y:200,
+  duration:0.8,
+  opacity:0
+},"s")
+projectbox.from(".box-three",{
+  x:200,
+  duration:0.8,
+  opacity:0
+},"f")
+projectbox.from(".box-four",{
+  x:-200,
+  duration:0.8,
+  opacity:0
+},"-=1")
+projectbox.from(".box-five",{
+  y:200,
+  duration:0.8,
+  opacity:0
+},"s")
+projectbox.from(".box-six",{
+  x:200,
+  duration:0.8,
+  opacity:0
+},'-=1')
 
 // ============about start================
 let about=gsap.timeline({
@@ -323,13 +238,11 @@ about.from("#about .a-text",{
   x:200
 },"a");
 
-
-
 // ===================================contact=============
-let contacth2text=document.querySelector(".contact-box h2").textContent;
-let contacth2=document.querySelector(".contact-box h2");
-let emty=""
-let splic=contacth2text.split("");
+let contacth2text = document.querySelector(".contact-box h2").textContent;
+let contacth2 = document.querySelector(".contact-box h2");
+let emty = "";
+let splic = contacth2text.split("");
 let half = contacth2text.length / 2;
 
 splic.forEach((elem, idx) => {
@@ -340,35 +253,45 @@ splic.forEach((elem, idx) => {
   }
   contacth2.innerHTML = emty;
 });
-  let contacttime=gsap.timeline({
-    scrollTrigger:{
-      trigger:"#contact",
-      scroller:"body",
-      start:"top 100%"
-    }
-  })
-  contacttime.from("#contact .contact-box",{
-    y:100,
-    opacity:0,
-    duration:1
-  })
-  contacttime.from(".c", {
-    x:100,
-    stagger: 0.1,
-    opacity: 0,
-  
-  },"h");
-  contacttime.from(".d", {
-    x:-100,
-    stagger: -0.1,
-    opacity: 0,
-  },"h");
-  
-  contacttime.from("#contact .contact-box p",{
-    y:100,
-    opacity:0,
-    duration:1
-  })
+
+let contacttime=gsap.timeline({
+  scrollTrigger:{
+    trigger:"#contact",
+    scroller:"body",
+    start:"top 100%",
+  }
+})
+contacttime.from("#contact .contact-box",{
+  y:100,
+  opacity:0,
+  duration:1
+})
+contacttime.from(".c", {
+  x:100,
+  stagger: 0.1,
+  opacity: 0,
+
+},"h");
+contacttime.from(".d", {
+  x:-100,
+  stagger: -0.1,
+  opacity: 0,
+},"h");
+
+contacttime.from("#contact .contact-box p",{
+  y:100,
+  opacity:0,
+  duration:1
+})
+
+gsap.from(".a", {
+  stagger: 0.1,
+  opacity: 0,
+});
+gsap.from(".b", {
+  stagger: -0.1,
+  opacity: 0,
+});
 
 if (window.innerWidth < 992) {
   let icon = gsap.timeline();
@@ -383,17 +306,7 @@ if (window.innerWidth < 992) {
   nav.addEventListener("click", (e) => {
     icon.play();
   });
-}
-
-gsap.from(".a", {
-  stagger: 0.1,
-  opacity: 0,
-});
-gsap.from(".b", {
-  stagger: -0.1,
-  opacity: 0,
-});
-
+ }
 
 // Initialize Lenis
 const lenis = new Lenis({

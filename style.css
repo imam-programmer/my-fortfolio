@@ -19,7 +19,7 @@
       background: var(--dark);
       color: white;
       overflow-x: hidden;
-      overflow-y: hidden;
+    
     }
 
     a {
@@ -55,7 +55,7 @@
       display: flex;
       align-items: center;
       position: relative;
-      overflow: hidden;
+  
       background:
         radial-gradient(circle at top left, #6c63ff33, transparent 30%),
         radial-gradient(circle at bottom right, #00d4ff22, transparent 30%);
@@ -218,6 +218,7 @@
     /* PROJECTS */
       #projects{
     overflow: hidden;
+
   }
     .project-card {
       overflow: hidden;
